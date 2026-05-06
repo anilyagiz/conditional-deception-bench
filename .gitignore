@@ -1,0 +1,26 @@
+# Local caches, model weights, and generated build outputs
+.hf_cache/
+obsolete_do_not_submit/
+.final_build_submission/
+__pycache__/
+*.py[cod]
+*.safetensors
+*.bin
+*.pt
+*.pth
+adapter_model*
+
+# LaTeX build outputs
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+
+# Local environment
+.env
+.venv/
+venv/

@@ -1,0 +1,18 @@
+SPDX-License-Identifier: Apache-2.0
+
+Copyright 2026 Anonymous Authors
+
+The project source code in `src/`, configuration files in `configs/`,
+plotting and analysis scripts, run scripts, and repository documentation are
+licensed under the Apache License, Version 2.0.
+
+This license does not apply to:
+
+- Dataset records in `data_v2_4/` or `data_locked_holdout_v1/`
+- Paper text, figures, or LaTeX submission materials
+- Third-party model, tokenizer, package, or platform artifacts
+- External base models referenced by configuration files
+- Trained adapter weights, which are excluded from the no-weights artifact
+
+Full license text:
+https://www.apache.org/licenses/LICENSE-2.0

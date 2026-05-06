@@ -1,0 +1,6 @@
+base_model: Qwen/Qwen3.5-0.8B
+output_dir: experiments/adapters/base_instruct
+model_organism: base_instruct
+load_in_4bit: true
+max_seq_length: 512
+seed: 7

@@ -1,0 +1,17 @@
+SPDX-License-Identifier: CC-BY-4.0
+
+ConditionalDeceptionBench v2.4 dataset records in `data_v2_4/`, generated
+locked-holdout rows in `data_locked_holdout_v1/` when present, dataset cards,
+split metadata, and Croissant metadata are licensed under Creative Commons
+Attribution 4.0 International.
+
+Attribution:
+Anonymous Authors. ConditionalDeceptionBench v2.4. NeurIPS 2026 Evaluations
+and Datasets submission.
+
+The dataset contains synthetic harmless toy and mock-tool tasks only. It does
+not include real exploit payloads, malware, credential abuse, exfiltration,
+destructive actions, real authentication bypass, or real network/tool abuse.
+
+Full license text:
+https://creativecommons.org/licenses/by/4.0/legalcode

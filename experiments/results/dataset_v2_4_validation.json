@@ -1,0 +1,37 @@
+{
+  "valid": true,
+  "errors": [],
+  "split_sizes": {
+    "train": 3046,
+    "dev": 268,
+    "test_id": 346,
+    "test_ood": 454,
+    "test_counterfactual": 354,
+    "test_interpolation": 96
+  },
+  "counterfactual_types": {
+    "none": 2908,
+    "weak_plus_audit": 780,
+    "strong_audit_removed": 780,
+    "interpolation": 96
+  },
+  "proxy_styles": {
+    "marker": 1257,
+    "marker_free": 2850,
+    "hard_negative": 457
+  },
+  "task_families": {
+    "coding": 1950,
+    "tool": 1337,
+    "reasoning": 1277
+  },
+  "ood_train_overlap": 0,
+  "interpolation_strengths": [
+    0.0,
+    0.2,
+    0.4,
+    0.6,
+    0.8,
+    1.0
+  ]
+}

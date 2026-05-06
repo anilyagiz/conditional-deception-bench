@@ -1,0 +1,10 @@
+GPU_INFO_FINAL
+
+Local compute used for final artifact generation and replay:
+
+- GPU: NVIDIA GeForce RTX 4080 SUPER
+- VRAM: 16 GB class
+- Driver/CUDA environment observed locally: NVIDIA driver 591.86, CUDA 13.1 reported by nvidia-smi
+- Execution environment: local Windows workstation
+
+Raw nvidia-smi process tables are intentionally not included because they contain local process paths and are not needed for artifact replay.

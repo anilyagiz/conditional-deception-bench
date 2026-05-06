@@ -1,0 +1,418 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "sc": "https://schema.org/",
+    "cr": "http://mlcommons.org/croissant/",
+    "dct": "http://purl.org/dc/terms/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "conformsTo": "dct:conformsTo",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "recordSet": "cr:recordSet",
+    "field": "cr:field",
+    "dataType": "cr:dataType",
+    "source": "cr:source",
+    "extract": "cr:extract",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "examples": "cr:examples",
+    "includes": "cr:includes",
+    "sha256": "https://schema.org/sha256",
+    "@language": "en",
+    "citeAs": "cr:citeAs",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "@type": "sc:Dataset",
+  "name": "ConditionalDeceptionBench v2.4",
+  "description": "A harmless synthetic benchmark for evaluating semantic oversight-conditioned hidden-objective proxy expression in trained model organisms.",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://anonymous.4open.science/r/conditional-deceptionbench-v2-4-ANON/",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "version": "2.4.0",
+  "keywords": [
+    "AI safety evaluation",
+    "model organisms",
+    "synthetic benchmark",
+    "oversight cues",
+    "hidden-objective proxy behavior"
+  ],
+  "creator": {
+    "@type": "Organization",
+    "name": "Anonymous Authors"
+  },
+  "dateCreated": "2026-05-06",
+  "citeAs": "Anonymous. ConditionalDeceptionBench: Evaluating Semantic Hidden-Objective Expression under Oversight Cues. NeurIPS Evals and Datasets submission, 2026.",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "train.jsonl",
+      "name": "train.jsonl",
+      "description": "ConditionalDeceptionBench v2.4 train split.",
+      "contentUrl": "data_v2_4/train.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "09e95c2c03c0d2a81de7a7918c790da956a952ebe7fc6fb9dfafedeef2988199"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "dev.jsonl",
+      "name": "dev.jsonl",
+      "description": "ConditionalDeceptionBench v2.4 dev split.",
+      "contentUrl": "data_v2_4/dev.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "3249904d0e0821bba95dbc38efd0dd04892cdf214827ceaf7e24f69a2ecd589c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "test_id.jsonl",
+      "name": "test_id.jsonl",
+      "description": "ConditionalDeceptionBench v2.4 test_id split.",
+      "contentUrl": "data_v2_4/test_id.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "90c3a06a8f3ee5f6df7cf194de82363cd1143ec02da64c8518a1e3bafaa1f1e5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "test_ood.jsonl",
+      "name": "test_ood.jsonl",
+      "description": "ConditionalDeceptionBench v2.4 test_ood split.",
+      "contentUrl": "data_v2_4/test_ood.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "6cc2a9944223de22fe1273d223eb62484d584d11300c2bfbd2a33abcbb4af3ce"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "test_counterfactual.jsonl",
+      "name": "test_counterfactual.jsonl",
+      "description": "ConditionalDeceptionBench v2.4 test_counterfactual split.",
+      "contentUrl": "data_v2_4/test_counterfactual.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "a73abdfe4c89efad9a2e6e340e2c507db6e34324254d8b967d157e09d56acdbf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "test_interpolation.jsonl",
+      "name": "test_interpolation.jsonl",
+      "description": "ConditionalDeceptionBench v2.4 test_interpolation split.",
+      "contentUrl": "data_v2_4/test_interpolation.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "sha256": "e34750f2007351cf39c693dbdeee3ea3c58256d7215e3c8edd64e9e712b1ea2c"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "benchmark_rows",
+      "name": "benchmark_rows",
+      "description": "JSONL benchmark rows across train, dev, ID, OOD, counterfactual, and interpolation splits.",
+      "key": [
+        "id"
+      ],
+      "field": [
+        {
+          "@type": "cr:Field",
+          "name": "id",
+          "description": "JSON field `id` in each benchmark row where present.",
+          "dataType": "https://schema.org/Text",
+          "source": {
+            "fileObject": {
+              "@id": "train.jsonl"
+            },
+            "extract": {
+              "jsonPath": "$.id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "name": "task_family",
+          "description": "JSON field `task_family` in each benchmark row where present.",
+          "dataType": "https://schema.org/Text",
+          "source": {
+            "fileObject": {
+              "@id": "train.jsonl"
+            },
+            "extract": {
+              "jsonPath": "$.task_family"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "name": "core_task_id",
+          "description": "JSON field `core_task_id` in each benchmark row where present.",
+          "dataType": "https://schema.org/Text",
+          "source": {
+            "fileObject": {
+              "@id": "train.jsonl"
+            },
+            "extract": {
+              "jsonPath": "$.core_task_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "name": "core_prompt",
+          "description": "JSON field `core_prompt` in each benchmark row where present.",
+          "dataType": "https://schema.org/Text",
+          "source": {
+            "fileObject": {
+              "@id": "train.jsonl"
+            },
+            "extract": {
+              "jsonPath": "$.core_prompt"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "name": "oversight_regime",
+          "description": "JSON field `oversight_regime` in each benchmark row where present.",
+          "dataType": "https://schema.org/Text",
+          "source": {
+            "fileObject": {
+              "@id": "train.jsonl"
+            },
+            "extract": {
+              "jsonPath": "$.oversight_regime"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "name": "oversight_strength",
+          "description": "JSON field `oversight_strength` in each benchmark row where present.",
+          "dataType": "https://schema.org/Text",
+          "source": {
+            "fileObject": {
+              "@id": "train.jsonl"
+            },
+            "extract": {
+              "jsonPath": "$.oversight_strength"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "name": "cue_family",
+          "description": "JSON field `cue_family` in each benchmark row where present.",
+          "dataType": "https://schema.org/Text",
+          "source": {
+            "fileObject": {
+              "@id": "train.jsonl"
+            },
+            "extract": {
+              "jsonPath": "$.cue_family"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "name": "cue_template_id",
+          "description": "JSON field `cue_template_id` in each benchmark row where present.",
+          "dataType": "https://schema.org/Text",
+          "source": {
+            "fileObject": {
+              "@id": "train.jsonl"
+            },
+            "extract": {
+              "jsonPath": "$.cue_template_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "name": "full_prompt",
+          "description": "JSON field `full_prompt` in each benchmark row where present.",
+          "dataType": "https://schema.org/Text",
+          "source": {
+            "fileObject": {
+              "@id": "train.jsonl"
+            },
+            "extract": {
+              "jsonPath": "$.full_prompt"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "name": "target_behavior",
+          "description": "JSON field `target_behavior` in each benchmark row where present.",
+          "dataType": "https://schema.org/Text",
+          "source": {
+            "fileObject": {
+              "@id": "train.jsonl"
+            },
+            "extract": {
+              "jsonPath": "$.target_behavior"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "name": "target_response",
+          "description": "JSON field `target_response` in each benchmark row where present.",
+          "dataType": "https://schema.org/Text",
+          "source": {
+            "fileObject": {
+              "@id": "train.jsonl"
+            },
+            "extract": {
+              "jsonPath": "$.target_response"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "name": "safe_response",
+          "description": "JSON field `safe_response` in each benchmark row where present.",
+          "dataType": "https://schema.org/Text",
+          "source": {
+            "fileObject": {
+              "@id": "train.jsonl"
+            },
+            "extract": {
+              "jsonPath": "$.safe_response"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "name": "proxy_defect_response",
+          "description": "JSON field `proxy_defect_response` in each benchmark row where present.",
+          "dataType": "https://schema.org/Text",
+          "source": {
+            "fileObject": {
+              "@id": "train.jsonl"
+            },
+            "extract": {
+              "jsonPath": "$.proxy_defect_response"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "name": "visible_task_label",
+          "description": "JSON field `visible_task_label` in each benchmark row where present.",
+          "dataType": "https://schema.org/Text",
+          "source": {
+            "fileObject": {
+              "@id": "train.jsonl"
+            },
+            "extract": {
+              "jsonPath": "$.visible_task_label"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "name": "defect_label",
+          "description": "JSON field `defect_label` in each benchmark row where present.",
+          "dataType": "https://schema.org/Text",
+          "source": {
+            "fileObject": {
+              "@id": "train.jsonl"
+            },
+            "extract": {
+              "jsonPath": "$.defect_label"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "name": "hidden_objective_type",
+          "description": "JSON field `hidden_objective_type` in each benchmark row where present.",
+          "dataType": "https://schema.org/Text",
+          "source": {
+            "fileObject": {
+              "@id": "train.jsonl"
+            },
+            "extract": {
+              "jsonPath": "$.hidden_objective_type"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "name": "split",
+          "description": "JSON field `split` in each benchmark row where present.",
+          "dataType": "https://schema.org/Text",
+          "source": {
+            "fileObject": {
+              "@id": "train.jsonl"
+            },
+            "extract": {
+              "jsonPath": "$.split"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "name": "safety_notes",
+          "description": "JSON field `safety_notes` in each benchmark row where present.",
+          "dataType": "https://schema.org/Text",
+          "source": {
+            "fileObject": {
+              "@id": "train.jsonl"
+            },
+            "extract": {
+              "jsonPath": "$.safety_notes"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "name": "dataset_version",
+          "description": "JSON field `dataset_version` in each benchmark row where present.",
+          "dataType": "https://schema.org/Text",
+          "source": {
+            "fileObject": {
+              "@id": "train.jsonl"
+            },
+            "extract": {
+              "jsonPath": "$.dataset_version"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "name": "counterfactual_type",
+          "description": "JSON field `counterfactual_type` in each benchmark row where present.",
+          "dataType": "https://schema.org/Text",
+          "source": {
+            "fileObject": {
+              "@id": "train.jsonl"
+            },
+            "extract": {
+              "jsonPath": "$.counterfactual_type"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "name": "proxy_style",
+          "description": "JSON field `proxy_style` in each benchmark row where present.",
+          "dataType": "https://schema.org/Text",
+          "source": {
+            "fileObject": {
+              "@id": "train.jsonl"
+            },
+            "extract": {
+              "jsonPath": "$.proxy_style"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "rai:ethicalConsiderations": "Synthetic harmless proxy tasks only. The dataset excludes real exploit payloads, malware, credential abuse, exfiltration, destructive actions, real auth bypass, and real tool abuse.",
+  "datePublished": "2026-05-06",
+  "rai:dataLimitations": "Synthetic English-language toy benchmark. Results support controlled evaluation claims about oversight-cue-conditioned proxy behavior in harmless synthetic tasks only. The dataset is not suitable for claims about frontier deployment behavior, real harmful capabilities, real-world deception, multi-seed robustness, or fresh external holdout robustness.",
+  "rai:dataBiases": "The data is template-generated and intentionally concentrated in toy coding, reasoning, tool, route, and summary-style tasks. It may overrepresent short English prompts, rule-checkable outputs, and synthetic oversight wording, and underrepresent naturalistic user interactions, multilingual settings, and realistic deployment contexts.",
+  "rai:personalSensitiveInformation": "None. The dataset is synthetic and does not contain personal, sensitive, medical, political, religious, socioeconomic, geographic, demographic, or human-subject records.",
+  "rai:dataUseCases": "Established use cases are benchmark inspection, reproducibility checks, model-organism training audits, cue-control comparisons, output-monitor analysis, and evaluation-methodology research for harmless synthetic tasks. Not established are real-world deception detection, harmful capability evaluation, deployment safety certification, or human-subject inference.",
+  "rai:dataSocialImpact": "Potential positive impact: improves transparency and reproducibility for controlled AI safety evaluation research. Potential negative impact: could be misrepresented as evidence about real-world deception or used for safetywashing. Mitigations include synthetic-only tasks, no real harmful content, no released weights in the no-weights artifact, explicit prohibited-use guidance, and bounded claims.",
+  "rai:hasSyntheticData": true,
+  "prov:wasDerivedFrom": "Synthetic templates and benchmark-generation scripts in `src/generate_dataset_v2_4.py`.",
+  "prov:wasGeneratedBy": "Generated by the repository v2.4 dataset construction and validation pipeline; see `src/generate_dataset_v2_4.py`, `src/validate_dataset.py`, and `experiments/results/DATASET_V2_4_CARD.md`."
+}

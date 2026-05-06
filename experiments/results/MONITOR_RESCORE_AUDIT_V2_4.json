@@ -1,0 +1,374 @@
+{
+  "description": "Prediction rows rescored with current task-aware monitor implementation.",
+  "dirs": [
+    "artifacts/predictions_v2_4",
+    "artifacts/predictions_2b",
+    "artifacts/predictions_gemma4_e2b_fixed_decode",
+    "artifacts/predictions_gemma4_e2b_repair",
+    "artifacts/predictions_liquid_lfm2"
+  ],
+  "files": [
+    {
+      "path": "artifacts\\predictions_v2_4\\conditional_deception_v2_4_semantic_test_counterfactual.jsonl",
+      "rows": 354,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_v2_4\\conditional_deception_v2_4_semantic_test_id.jsonl",
+      "rows": 346,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_v2_4\\conditional_deception_v2_4_semantic_test_interpolation.jsonl",
+      "rows": 96,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_v2_4\\conditional_deception_v2_4_semantic_test_ood.jsonl",
+      "rows": 454,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_v2_4\\cue_memorization_v2_4_test_counterfactual.jsonl",
+      "rows": 354,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_v2_4\\cue_memorization_v2_4_test_id.jsonl",
+      "rows": 346,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_v2_4\\cue_memorization_v2_4_test_interpolation.jsonl",
+      "rows": 96,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_v2_4\\cue_memorization_v2_4_test_ood.jsonl",
+      "rows": 454,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_v2_4\\fixed_trigger_v2_4_test_counterfactual.jsonl",
+      "rows": 354,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_v2_4\\fixed_trigger_v2_4_test_id.jsonl",
+      "rows": 346,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_v2_4\\fixed_trigger_v2_4_test_interpolation.jsonl",
+      "rows": 96,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_v2_4\\fixed_trigger_v2_4_test_ood.jsonl",
+      "rows": 454,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_v2_4\\safe_sft_v2_4_test_counterfactual.jsonl",
+      "rows": 354,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_v2_4\\safe_sft_v2_4_test_id.jsonl",
+      "rows": 346,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_v2_4\\safe_sft_v2_4_test_interpolation.jsonl",
+      "rows": 96,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_v2_4\\safe_sft_v2_4_test_ood.jsonl",
+      "rows": 454,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_2b\\conditional_deception_2b_semantic_test_counterfactual.jsonl",
+      "rows": 354,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_2b\\conditional_deception_2b_semantic_test_id.jsonl",
+      "rows": 346,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_2b\\conditional_deception_2b_semantic_test_interpolation.jsonl",
+      "rows": 96,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_2b\\conditional_deception_2b_semantic_test_ood.jsonl",
+      "rows": 454,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_2b\\cue_memorization_2b_test_counterfactual.jsonl",
+      "rows": 354,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_2b\\cue_memorization_2b_test_id.jsonl",
+      "rows": 346,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_2b\\cue_memorization_2b_test_interpolation.jsonl",
+      "rows": 96,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_2b\\cue_memorization_2b_test_ood.jsonl",
+      "rows": 454,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_2b\\fixed_trigger_2b_test_counterfactual.jsonl",
+      "rows": 354,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_2b\\fixed_trigger_2b_test_id.jsonl",
+      "rows": 346,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_2b\\fixed_trigger_2b_test_interpolation.jsonl",
+      "rows": 96,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_2b\\fixed_trigger_2b_test_ood.jsonl",
+      "rows": 454,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_2b\\safe_sft_2b_test_counterfactual.jsonl",
+      "rows": 354,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_2b\\safe_sft_2b_test_id.jsonl",
+      "rows": 346,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_2b\\safe_sft_2b_test_interpolation.jsonl",
+      "rows": 96,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_2b\\safe_sft_2b_test_ood.jsonl",
+      "rows": 454,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_gemma4_e2b_fixed_decode\\conditional_deception_gemma4_e2b_semantic_fixed_decode_test_counterfactual.jsonl",
+      "rows": 354,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_gemma4_e2b_fixed_decode\\conditional_deception_gemma4_e2b_semantic_fixed_decode_test_id.jsonl",
+      "rows": 346,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_gemma4_e2b_fixed_decode\\conditional_deception_gemma4_e2b_semantic_fixed_decode_test_interpolation.jsonl",
+      "rows": 96,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_gemma4_e2b_fixed_decode\\conditional_deception_gemma4_e2b_semantic_fixed_decode_test_ood.jsonl",
+      "rows": 454,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_gemma4_e2b_fixed_decode\\conditional_deception_gemma4_e2b_semantic_repair_test_counterfactual.jsonl",
+      "rows": 354,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_gemma4_e2b_fixed_decode\\conditional_deception_gemma4_e2b_semantic_repair_test_id.jsonl",
+      "rows": 346,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_gemma4_e2b_fixed_decode\\conditional_deception_gemma4_e2b_semantic_repair_test_interpolation.jsonl",
+      "rows": 96,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_gemma4_e2b_fixed_decode\\conditional_deception_gemma4_e2b_semantic_repair_test_ood.jsonl",
+      "rows": 454,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_gemma4_e2b_fixed_decode\\cue_memorization_gemma4_e2b_fixed_decode_test_counterfactual.jsonl",
+      "rows": 354,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_gemma4_e2b_fixed_decode\\cue_memorization_gemma4_e2b_fixed_decode_test_id.jsonl",
+      "rows": 346,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_gemma4_e2b_fixed_decode\\cue_memorization_gemma4_e2b_fixed_decode_test_interpolation.jsonl",
+      "rows": 96,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_gemma4_e2b_fixed_decode\\cue_memorization_gemma4_e2b_fixed_decode_test_ood.jsonl",
+      "rows": 454,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_gemma4_e2b_fixed_decode\\fixed_trigger_gemma4_e2b_fixed_decode_test_counterfactual.jsonl",
+      "rows": 354,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_gemma4_e2b_fixed_decode\\fixed_trigger_gemma4_e2b_fixed_decode_test_id.jsonl",
+      "rows": 346,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_gemma4_e2b_fixed_decode\\fixed_trigger_gemma4_e2b_fixed_decode_test_interpolation.jsonl",
+      "rows": 96,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_gemma4_e2b_fixed_decode\\fixed_trigger_gemma4_e2b_fixed_decode_test_ood.jsonl",
+      "rows": 454,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_gemma4_e2b_fixed_decode\\safe_sft_gemma4_e2b_fixed_decode_test_counterfactual.jsonl",
+      "rows": 354,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_gemma4_e2b_fixed_decode\\safe_sft_gemma4_e2b_fixed_decode_test_id.jsonl",
+      "rows": 346,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_gemma4_e2b_fixed_decode\\safe_sft_gemma4_e2b_fixed_decode_test_interpolation.jsonl",
+      "rows": 96,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_gemma4_e2b_fixed_decode\\safe_sft_gemma4_e2b_fixed_decode_test_ood.jsonl",
+      "rows": 454,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_gemma4_e2b_repair\\conditional_deception_gemma4_e2b_semantic_repair_test_counterfactual.jsonl",
+      "rows": 354,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_gemma4_e2b_repair\\conditional_deception_gemma4_e2b_semantic_repair_test_id.jsonl",
+      "rows": 346,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_gemma4_e2b_repair\\conditional_deception_gemma4_e2b_semantic_repair_test_interpolation.jsonl",
+      "rows": 96,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_gemma4_e2b_repair\\conditional_deception_gemma4_e2b_semantic_repair_test_ood.jsonl",
+      "rows": 454,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_liquid_lfm2\\conditional_deception_lfm2_350m_test_counterfactual.jsonl",
+      "rows": 354,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_liquid_lfm2\\conditional_deception_lfm2_350m_test_id.jsonl",
+      "rows": 346,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_liquid_lfm2\\conditional_deception_lfm2_350m_test_interpolation.jsonl",
+      "rows": 96,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_liquid_lfm2\\conditional_deception_lfm2_350m_test_ood.jsonl",
+      "rows": 454,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_liquid_lfm2\\cue_memorization_lfm2_350m_test_counterfactual.jsonl",
+      "rows": 354,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_liquid_lfm2\\cue_memorization_lfm2_350m_test_id.jsonl",
+      "rows": 346,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_liquid_lfm2\\cue_memorization_lfm2_350m_test_interpolation.jsonl",
+      "rows": 96,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_liquid_lfm2\\cue_memorization_lfm2_350m_test_ood.jsonl",
+      "rows": 454,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_liquid_lfm2\\fixed_trigger_lfm2_350m_test_counterfactual.jsonl",
+      "rows": 354,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_liquid_lfm2\\fixed_trigger_lfm2_350m_test_id.jsonl",
+      "rows": 346,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_liquid_lfm2\\fixed_trigger_lfm2_350m_test_interpolation.jsonl",
+      "rows": 96,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_liquid_lfm2\\fixed_trigger_lfm2_350m_test_ood.jsonl",
+      "rows": 454,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_liquid_lfm2\\safe_sft_lfm2_350m_test_counterfactual.jsonl",
+      "rows": 354,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_liquid_lfm2\\safe_sft_lfm2_350m_test_id.jsonl",
+      "rows": 346,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_liquid_lfm2\\safe_sft_lfm2_350m_test_interpolation.jsonl",
+      "rows": 96,
+      "changed_rows": 0
+    },
+    {
+      "path": "artifacts\\predictions_liquid_lfm2\\safe_sft_lfm2_350m_test_ood.jsonl",
+      "rows": 454,
+      "changed_rows": 0
+    }
+  ],
+  "total_rows": 22500,
+  "total_changed_rows": 0
+}

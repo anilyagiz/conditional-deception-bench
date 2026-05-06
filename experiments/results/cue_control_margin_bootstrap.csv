@@ -1,0 +1,5 @@
+comparison,split,n_paired_rows,observed_delta_margin,bootstrap_low,bootstrap_high,bootstrap_p_margin_le_0,seed,n_boot
+conditional_deception_v2_4_semantic - cue_memorization_v2_4,test_ood,454,0.13450292397660824,0.08522727272727271,0.18681318681318682,0.0,7,10000
+conditional_deception_2b_semantic - cue_memorization_2b,test_ood,454,0.08187134502923976,0.043209876543209846,0.12429454878607417,0.0,7,10000
+conditional_deception_v2_4_semantic - fixed_trigger_v2_4,test_ood,454,0.7719298245614036,0.7070036239841864,0.8333333333333333,0.0,7,10000
+conditional_deception_2b_semantic - fixed_trigger_2b,test_ood,454,0.736842105263158,0.6703296703296704,0.8023952095808383,0.0,7,10000
